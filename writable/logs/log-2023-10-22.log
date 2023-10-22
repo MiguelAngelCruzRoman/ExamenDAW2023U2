@@ -1,0 +1,403 @@
+CRITICAL - 2023-10-22 00:07:03 --> syntax error, unexpected string content " . $adoptador->idAdoptador) ?>..."
+in APPPATH\Views\adoptador\mostrar.php on line 19.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 3 APPPATH\Controllers\AdoptadorController.php(20): view('adoptador/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 00:07:07 --> syntax error, unexpected double-quoted string ">", expecting "," or ";"
+in APPPATH\Views\adoptador\mostrar.php on line 10.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 3 APPPATH\Controllers\AdoptadorController.php(20): view('adoptador/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 00:29:19 --> syntax error, unexpected double-quoted string "", expecting "," or ";"
+in APPPATH\Views\adoptador\mostrar.php on line 8.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 3 APPPATH\Controllers\AdoptadorController.php(20): view('adoptador/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 01:30:17 --> Undefined array key "nombre"
+in APPPATH\Controllers\AdoptadorController.php on line 66.
+ 1 APPPATH\Controllers\AdoptadorController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 66)
+ 2 APPPATH\Controllers\AdoptadorController.php(55): App\Controllers\AdoptadorController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 01:41:45 --> syntax error, unexpected token "if", expecting "]"
+in APPPATH\Controllers\AdoptadorController.php on line 80.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdoptadorController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdoptadorController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdoptadorController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 01:42:44 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\AdoptadorController.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdoptadorController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdoptadorController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdoptadorController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 01:42:55 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\AdoptadorController.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdoptadorController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdoptadorController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdoptadorController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 01:51:46 --> Undefined array key "id"
+in APPPATH\Controllers\AdoptadorController.php on line 133.
+ 1 APPPATH\Controllers\AdoptadorController.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-22 01:53:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`direccion`, CONSTRAINT `idAdoptador_direccion` FOREIGN KEY (`idDireccion`) REFERENCES `adoptador` (`idAdoptador`)) in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\xampp\htdocs\ExamenDAWU2\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('59')
+#8 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-22 01:53:30 --> Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`direccion`, CONSTRAINT `idAdoptador_direccion` FOREIGN KEY (`idDireccion`) REFERENCES `adoptador` (`idAdoptador`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('59')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-22 01:54:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`direccion`, CONSTRAINT `idAdoptador_direccion` FOREIGN KEY (`idDireccion`) REFERENCES `adoptador` (`idAdoptador`)) in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\xampp\htdocs\ExamenDAWU2\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('59')
+#8 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-22 01:54:02 --> Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`direccion`, CONSTRAINT `idAdoptador_direccion` FOREIGN KEY (`idDireccion`) REFERENCES `adoptador` (`idAdoptador`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('59')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-22 01:55:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`mascota_adoptador`, CONSTRAINT `idAdoptador_Adopta` FOREIGN KEY (`adoptador`) REFERENCES `adoptador` (`idAdoptador`)) in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\xampp\htdocs\ExamenDAWU2\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('58')
+#8 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-22 01:55:15 --> Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`mascota_adoptador`, CONSTRAINT `idAdoptador_Adopta` FOREIGN KEY (`adoptador`) REFERENCES `adoptador` (`idAdoptador`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('58')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-22 01:55:19 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`direccion`, CONSTRAINT `idAdoptador_direccion` FOREIGN KEY (`idDireccion`) REFERENCES `adoptador` (`idAdoptador`)) in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\xampp\htdocs\ExamenDAWU2\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('56')
+#8 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-22 01:55:19 --> Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`direccion`, CONSTRAINT `idAdoptador_direccion` FOREIGN KEY (`idDireccion`) REFERENCES `adoptador` (`idAdoptador`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('56')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-22 01:55:23 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`mascota_adoptador`, CONSTRAINT `idAdoptador_Adopta` FOREIGN KEY (`adoptador`) REFERENCES `adoptador` (`idAdoptador`)) in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\xampp\htdocs\ExamenDAWU2\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('23')
+#8 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-22 01:55:23 --> Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`mascota_adoptador`, CONSTRAINT `idAdoptador_Adopta` FOREIGN KEY (`adoptador`) REFERENCES `adoptador` (`idAdoptador`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(99): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->delete('23')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 01:56:04 --> Undefined variable $alumnos
+in APPPATH\Views\adoptador\buscar.php on line 33.
+ 1 APPPATH\Views\adoptador\buscar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/buscar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(163): view('adoptador/buscar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:11:17 --> Attempt to read property "primerNombrenombre" on array
+in APPPATH\Views\adoptador\buscar.php on line 33.
+ 1 APPPATH\Views\adoptador\buscar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "primerNombrenombre" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/buscar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(164): view('adoptador/buscar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:11:23 --> Undefined property: stdClass::$primerNombrenombre
+in APPPATH\Views\adoptador\buscar.php on line 33.
+ 1 APPPATH\Views\adoptador\buscar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$primerNombrenombre', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/buscar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(164): view('adoptador/buscar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:11:24 --> Undefined property: stdClass::$primerNombrenombre
+in APPPATH\Views\adoptador\buscar.php on line 33.
+ 1 APPPATH\Views\adoptador\buscar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$primerNombrenombre', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\buscar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/buscar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(164): view('adoptador/buscar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:24:44 --> Undefined array key "identificacion"
+in APPPATH\Controllers\AdoptadorController.php on line 151.
+ 1 APPPATH\Controllers\AdoptadorController.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "identificacion"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:24:57 --> Undefined array key "identificacion"
+in APPPATH\Controllers\AdoptadorController.php on line 151.
+ 1 APPPATH\Controllers\AdoptadorController.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "identificacion"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:25:06 --> Undefined array key "identificacion"
+in APPPATH\Controllers\AdoptadorController.php on line 151.
+ 1 APPPATH\Controllers\AdoptadorController.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "identificacion"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:25:13 --> Undefined array key "identificacion"
+in APPPATH\Controllers\AdoptadorController.php on line 151.
+ 1 APPPATH\Controllers\AdoptadorController.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "identificacion"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:30:48 --> Undefined array key "CURP"
+in APPPATH\Controllers\AdoptadorController.php on line 150.
+ 1 APPPATH\Controllers\AdoptadorController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CURP"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:30:56 --> Undefined array key "CURP"
+in APPPATH\Controllers\AdoptadorController.php on line 150.
+ 1 APPPATH\Controllers\AdoptadorController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CURP"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:31:14 --> Undefined array key "CURP"
+in APPPATH\Controllers\AdoptadorController.php on line 150.
+ 1 APPPATH\Controllers\AdoptadorController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CURP"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:31:27 --> Undefined array key "CURP"
+in APPPATH\Controllers\AdoptadorController.php on line 150.
+ 1 APPPATH\Controllers\AdoptadorController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CURP"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:37:53 --> syntax error, unexpected token "->", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\AdoptadorController.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdoptadorController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdoptadorController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdoptadorController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:38:07 --> Call to a member function like() on array
+in APPPATH\Controllers\AdoptadorController.php on line 161.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 02:38:20 --> Call to a member function like() on array
+in APPPATH\Controllers\AdoptadorController.php on line 161.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->buscar()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 03:02:09 --> Undefined variable $adoptador
+in APPPATH\Views\mascotas\mostrar.php on line 15.
+ 1 APPPATH\Views\mascotas\mostrar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adoptador', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\mostrar.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(20): view('mascotas/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 03:02:21 --> Undefined variable $adoptador
+in APPPATH\Views\mascotas\mostrar.php on line 15.
+ 1 APPPATH\Views\mascotas\mostrar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adoptador', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\mostrar.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(20): view('mascotas/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 03:05:17 --> Call to a member function findAll() on null
+in APPPATH\Controllers\MascotasController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 03:08:02 --> Undefined variable $idRaza
+in APPPATH\Views\mascotas\mostrar.php on line 13.
+ 1 APPPATH\Views\mascotas\mostrar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idRaza', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\mostrar.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(23): view('mascotas/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-22 03:31:37 --> Undefined property: stdClass::$viceras
+in APPPATH\Views\mascotas\agregar.php on line 36.
+ 1 APPPATH\Views\mascotas\agregar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$viceras', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\agregar.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/agregar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(40): view('mascotas/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
