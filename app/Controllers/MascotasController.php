@@ -31,6 +31,8 @@ class MascotasController extends BaseController
         $dietasModel = model('DietasModel');
         $data['dietas'] = $dietasModel->findAll();
 
+        $cuidadosModel = model('CuidadosModel');
+        $data['cuidados'] = $cuidadosModel->findAll();
 
 
         $data['title']="Agregar Mascotas";
@@ -44,13 +46,13 @@ class MascotasController extends BaseController
         }
 
         $rules =[
-            'primerNombre'=>'required|max_length[15]|min_length[3]|alpha',
-            'apellidoPaterno'=>'required|max_length[15]|min_length[3]|alpha',
-            'apellidoMaterno'=>'required|max_length[15]|min_length[3]|alpha',
-            'fechaNacimiento'=>'required',
-            'CIC'=>'required|max_length[9]|min_length[9]',
-            'CURP'=>'required|max_length[18]|min_length[18]|alpha_numeric',
-            'foto'=>'required|valid_url',
+            'nombre'=>'required|max_length[30]|min_length[1]|alpha',
+            'edad'=>'required|integer',
+            'idRaza'=>'required|integer',
+            'idDietas'=>'required|integer',
+            'idCuidados'=>'required|integer',
+            'caracter'=>'required|min_length[4]|alpha',
+            'foto'=>'required|valid_url'
         ];
 
         if(!$this->validate($rules)){
@@ -68,112 +70,107 @@ class MascotasController extends BaseController
 
 
     public function insert(){
-        $adoptadorModel = model('AdoptadorModel');
+        $mascotasModel = model('MascotasModel');
 
 
         $data = [
-            "primerNombre"=>$_POST['primerNombre'],
-            "segundoNombre"=>$_POST['segundoNombre'],
-            "apellidoPaterno"=>$_POST['apellidoPaterno'],
-            "apellidoMaterno"=>$_POST['apellidoMaterno'],
-            "fechaNacimiento"=>$_POST['fechaNacimiento'],
-            "CIC"=>$_POST['CIC'],
-            "CURP"=>$_POST['CURP'],
-            "foto"=>$_POST['foto'],
+            "nombre"=>$_POST['nombre'],
+            "edad"=>$_POST['edad'],
+            "caracter"=>$_POST['caracter'],
+            "raza"=>$_POST['idRaza'],
+            "dieta"=>$_POST['idDietas'],
+            "foto"=>$_POST['foto']
         ];
+        $mascotasModel->insert($data,false);
 
-        $tiempo = strtotime($_POST['fechaNacimiento']); 
-        $ahora = time(); 
-        $edad = ($ahora-$tiempo)/(60*60*24*365.25); 
-        $edad = floor($edad); 
+       /* $mascotaCuidadosModel = model('mascotaCuidadosModel');
+        $data2 = [
+            "mascota"=>,
+            "cuidado"=>$_POST['idCuidados']
+        ];
+        $mascotaCuidadosModel->insert($data2);*/
 
-        if($edad >=18){
-            $data=[
-                "status"=>true
-            ];
-        }else{
-            $data=array(
-                "status"=>false
-            );
-        }
-
-        $adoptadorModel->insert($data,false);
         return true;        
     }
 
-    public function delete($idAdoptador){
-        $adoptadorModel = model('AdoptadorModel');
-        $adoptadorModel->delete($idAdoptador);
-        return redirect('adoptador/mostrar','refresh');
+    public function delete($idMascota){
+        $mascotasModel = model('MascotasModel');
+        $mascotasModel->delete($idMascota);
+        return redirect('mascotas/mostrar','refresh');
     }
 
-    public function editar($id){
-        $adoptadorModel=model('AdoptadorModel');
-        $data['adoptador']=$adoptadorModel->find($id);
+    public function editar($idMascota){
+        $mascotasModel=model('MascotasModel');
+        $data['mascota']=$mascotasModel->find($idMascota);
         
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $dietasModel = model('DietasModel');
+        $data['dietas'] = $dietasModel->findAll();
+
+        $cuidadosModel = model('CuidadosModel');
+        $data['cuidados'] = $cuidadosModel->findAll();
+
+
         return view('common/head').
                view('common/menu').
-               view('adoptador/editar',$data).
+               view('mascotas/editar',$data).
                view('common/footer');
     }
 
     public function update(){
-        $adoptadorModel = model('AdoptadorModel');
+        $mascotasModel = model('MascotasModel');
 
-        $data =array (
-            "primerNombre"=>$_POST['primerNombre'],
-            "segundoNombre"=>$_POST['segundoNombre'],
-            "apellidoPaterno"=>$_POST['apellidoPaterno'],
-            "apellidoMaterno"=>$_POST['apellidoMaterno'],
-            "fechaNacimiento"=>$_POST['fechaNacimiento'],
-            "CIC"=>$_POST['CIC'],
-            "CURP"=>$_POST['CURP'],
-            "foto"=>$_POST['foto'],
+        $data = array(
+            "nombre"=>$_POST['nombre'],
+            "edad"=>$_POST['edad'],
+            "caracter"=>$_POST['caracter'],
+            "raza"=>$_POST['idRaza'],
+            "dieta"=>$_POST['idDietas'],
+            "foto"=>$_POST['foto']
         );
 
-        $tiempo = strtotime($_POST['fechaNacimiento']); 
-        $ahora = time(); 
-        $edad = ($ahora-$tiempo)/(60*60*24*365.25); 
-        $edad = floor($edad); 
+         /* $mascotaCuidadosModel = model('mascotaCuidadosModel');
+        $data2 = [
+            "mascota"=>,
+            "cuidado"=>$_POST['idCuidados']
+        ];
+        $mascotaCuidadosModel->insert($data2);*/
 
-        if($edad >=18){
-            $data=array(
-                "status"=>true
-            );
-        }else{
-            $data=array(
-                "status"=>false
-            );
-        }
-        $adoptadorModel->update($_POST['idAdoptador'],$data);
-        return redirect('adoptador/mostrar','refresh');
+        $mascotasModel->update($_POST['idMascota'],$data);
+        return redirect('mascotas/mostrar','refresh');
     }
 
     public function buscar(){
-        $adoptadorModel = model('AdoptadorModel');
+        $mascotasModel = model('MascotasModel');
 
-        if(isset($_GET['nombre']) || isset($_GET['status']) || isset($_GET['CURP'])){
-            $primerNombre = $_GET['nombre'];
-            $segundoNombre = $_GET['nombre'];
-            $apellidoPaterno = $_GET['nombre'];
-            $apellidoMaterno = $_GET['nombre'];
-            $CURP = $_GET['CURP'];
-            $data['adoptadores']=$adoptadorModel->like('primerNombre',$primerNombre)
-                            ->like('CURP',$CURP)
-                            ->orlike('segundoNombre',$segundoNombre)
-                            ->orlike('apellidoPaterno',$apellidoPaterno)
-                            ->orlike('apellidoMaterno',$apellidoMaterno)
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $dietasModel = model('DietasModel');
+        $data['dietas'] = $dietasModel->findAll();
+
+        $cuidadosModel = model('CuidadosModel');
+        $data['cuidados'] = $cuidadosModel->findAll();
+
+        if(isset($_GET['nombre']) || isset($_GET['idRaza'])){
+            $nombre = $_GET['nombre'];
+            $idRaza = $_GET['idRaza'];
+
+            $data['mascotas']=$mascotasModel->like('nombre',$nombre)
+                            ->like('raza',$idRaza)
                             ->findAll();
         }
         else {
             $nombre ="";
-            $CURP="";
-            $data['adoptadores']=$adoptadorModel->findAll();
+            $idRaza="";
+            $data['mascotas']=$mascotasModel->findAll();
         }
 
         return view('common/head').
                view('common/menu').
-               view('adoptador/buscar',$data).
+               view('mascotas/buscar',$data).
                view('common/footer');
     }
 }

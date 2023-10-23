@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Adoptadores</h2>
+    <h2>Mascotas</h2>
     <div class="row">
         <?php foreach ($mascotas as $mascota): ?>
             <div class="col-md-4">
@@ -18,6 +18,7 @@
                         <div class="text-center">
                             <a href="<?= base_url('/mascotas/delete/' . $mascota->idMascota) ?>" class="btn btn-danger">Eliminar</a>
                             <a href="<?= base_url('/mascotas/editar/' . $mascota->idMascota) ?>" class="btn btn-warning">Editar</a>
+                            <a href="<?= base_url('' . $mascota->idMascota) ?>" class="btn btn-secondary">Saber más</a>
                         </div>
                     </div>
                 </div>

@@ -26,7 +26,7 @@
                     <lable for="idRaza" class="form-label">Raza:</lable>
                     <select name="idRaza" class="form-control">
                         <?php foreach($razas as $raza): ?>
-                            <option value="<?= $raza->idRaza?>"> <?= $raza->nombre?></option>
+                            <option value="<?= $raza->idRaza?>"> <?= $raza->nombre?> (<?= $raza->origen?>)</option>
                         <?php endforeach; ?>
                     </select>
                 </div>
@@ -36,6 +36,15 @@
                     <select name="idDietas" class="form-control">
                         <?php foreach($dietas as $dieta): ?>
                             <option value="<?= $dieta->idDietas?>"><?= $dieta->porcionesDiarias?> porciones diarias de <?= ($dieta->carnes)*100?>g de carne, <?= ($dieta->visceras)*100?>g de vísceras, <?= ($dieta->pescado)*100?>g de pescado, <?= ($dieta->cereales)*100?>g de cereales</option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <lable for="idCuidados" class="form-label">Cuidado:</lable>
+                    <select name="idCuidados" class="form-control">
+                        <?php foreach($cuidados as $cuidado): ?>
+                            <option value="<?= $cuidado->idCuidados?>"><?= $cuidado->tipo?> <?= $cuidado->cantidadCuidado?> veces (<?= $cuidado->frecuenciaCuidado?>)</option>
                         <?php endforeach; ?>
                     </select>
                 </div>

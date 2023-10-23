@@ -18,7 +18,7 @@
             <li><a class="dropdown-item" href="<?= base_url('index.php/mascotas/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
-
+<!--
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Perros 🐶
@@ -40,7 +40,7 @@
             <li><a class="dropdown-item" href="<?= base_url('index.php/materia/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
-
+-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Adoptadores 👨‍👧‍👧
