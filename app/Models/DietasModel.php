@@ -13,7 +13,7 @@ class DietasModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idDietas','hidratación','carnes','visceras','pescado','cereales','porcionesDiarias','tamañoPorción'];
+    protected $allowedFields    = ['idDietas','hidratación','carnes','visceras','pescado','cereales','porcionesDiarias','porcionesDiarias'];
 
     // Dates
     protected $useTimestamps = false;

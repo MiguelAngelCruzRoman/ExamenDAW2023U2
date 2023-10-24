@@ -18,7 +18,29 @@
             <li><a class="dropdown-item" href="<?= base_url('index.php/mascotas/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
-<!--
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Razas 🗺
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?= base_url('index.php/razas/agregar');?>">Agregar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/razas/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/razas/buscar') ?>">Buscar</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dietas 🍖
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?= base_url('index.php/dietas/agregar');?>">Agregar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/dietas/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('index.php/dietas/buscar') ?>">Buscar</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Perros 🐶
@@ -40,7 +62,7 @@
             <li><a class="dropdown-item" href="<?= base_url('index.php/materia/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
--->
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Adoptadores 👨‍👧‍👧

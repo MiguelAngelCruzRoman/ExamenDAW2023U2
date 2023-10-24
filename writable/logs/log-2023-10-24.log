@@ -1,0 +1,164 @@
+CRITICAL - 2023-10-24 03:08:43 --> Undefined array key "idRaza"
+in APPPATH\Controllers\RazasController.php on line 108.
+ 1 APPPATH\Controllers\RazasController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRaza"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\RazasController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\RazasController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RazasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 03:10:59 --> Undefined array key "idRaza"
+in APPPATH\Controllers\RazasController.php on line 108.
+ 1 APPPATH\Controllers\RazasController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRaza"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\RazasController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\RazasController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RazasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 03:12:56 --> Undefined array key "idRaza"
+in APPPATH\Controllers\RazasController.php on line 108.
+ 1 APPPATH\Controllers\RazasController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRaza"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\RazasController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\RazasController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RazasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 03:13:06 --> Undefined array key "idRaza"
+in APPPATH\Controllers\RazasController.php on line 108.
+ 1 APPPATH\Controllers\RazasController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRaza"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\RazasController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\RazasController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RazasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 03:15:42 --> Undefined array key "idRaza"
+in APPPATH\Controllers\RazasController.php on line 108.
+ 1 APPPATH\Controllers\RazasController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRaza"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\RazasController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\RazasController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RazasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 03:39:35 --> Call to undefined function App\Controllers\parseInteger()
+in APPPATH\Controllers\RazasController.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\RazasController->buscar()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RazasController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:36:17 --> Undefined array key "carne"
+in APPPATH\Controllers\DietasController.php on line 65.
+ 1 APPPATH\Controllers\DietasController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "carne"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\DietasController.php', 65)
+ 2 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:36:36 --> Undefined array key "carne"
+in APPPATH\Controllers\DietasController.php on line 71.
+ 1 APPPATH\Controllers\DietasController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "carne"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\DietasController.php', 71)
+ 2 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:36:43 --> Undefined variable $adoptadorModel
+in APPPATH\Controllers\DietasController.php on line 76.
+ 1 APPPATH\Controllers\DietasController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adoptadorModel', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\DietasController.php', 76)
+ 2 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:36:55 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\DietasController.php(76): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:37:11 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\DietasController.php(76): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:39:26 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\DietasController.php(79): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:39:41 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\DietasController.php(79): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:40:03 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\DietasController.php(76): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:40:28 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\DietasController.php(76): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\DietasController.php(50): App\Controllers\DietasController->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:50:40 --> Undefined variable $mascota
+in APPPATH\Views\dietas\editar.php on line 9.
+ 1 APPPATH\Views\dietas\editar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascota', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\dietas\\editar.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\dietas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dietas/editar', [], true)
+ 5 APPPATH\Controllers\DietasController.php(87): view('dietas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 04:51:04 --> Undefined variable $mascota
+in APPPATH\Views\dietas\editar.php on line 13.
+ 1 APPPATH\Views\dietas\editar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascota', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\dietas\\editar.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\dietas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dietas/editar', [], true)
+ 5 APPPATH\Controllers\DietasController.php(87): view('dietas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DietasController->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
