@@ -4,7 +4,7 @@
         <div class="col-8">
             <form action="<?= base_url('index.php/mascotas/update');?>" method="POST">
             <?= csrf_field()?>
-                <h2>Editar adoptador</h2>
+                <h2>Editar mascota</h2>
 
                 <input type="hidden" name="idMascota" value="<?=$mascota->idMascota?>">
 

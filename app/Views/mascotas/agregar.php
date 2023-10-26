@@ -58,12 +58,7 @@
                   <label for="foto" class="form-label">Fotografía: </label>
                   <input type="text" class="form-control" name="foto" id="foto"> 
                </div>
-
-               <!-- <div class="form-group">
-                  <label for="foto" class="form-label">Fotografía </label>
-                  <input type="file" class="form-control" name="foto" id="foto"> 
-               </div> -->
-
+               
                <br>
                 <div class="mb-3">
                     <input type="submit" class="btn btn-success">

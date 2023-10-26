@@ -4,7 +4,7 @@
         <?php foreach ($adoptadores as $adoptador): ?>
             <div class="col-md-4">
                 <div class="card mb-3">
-                    <img src="<?= $adoptador->foto ?>" class="card-img-top" alt="<?= $adoptador->primerNombre ?>">
+                    <img src="<?= $adoptador->foto ?>" class="card-img-top" alt="<?= $adoptador->primerNombre ?>" height="200" width="100"> 
                     <div class="card-body">
                         <h5 class="card-title">
                             <?= $adoptador->primerNombre ?> <?= $adoptador->segundoNombre ?> <?= $adoptador->apellidoPaterno ?> <?= $adoptador->apellidoMaterno ?>

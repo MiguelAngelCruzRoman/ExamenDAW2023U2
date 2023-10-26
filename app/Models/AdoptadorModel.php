@@ -13,7 +13,7 @@ class AdoptadorModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idGrupo','primerNombre','segundoNombre','apellidoPaterno','apellidoMaterno','fechaNacimiento','CIC','CURP','foto','status'];
+    protected $allowedFields    = ['idAdoptador','primerNombre','segundoNombre','apellidoPaterno','apellidoMaterno','fechaNacimiento','CIC','CURP','foto','status'];
 
     // Dates
     protected $useTimestamps = false;

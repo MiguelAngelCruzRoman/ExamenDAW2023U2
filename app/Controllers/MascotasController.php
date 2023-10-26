@@ -18,6 +18,12 @@ class MascotasController extends BaseController
         $razasModel = model('RazasModel');
         $data['razas'] = $razasModel->findAll();
 
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
+
         return view('common/head').
                view('common/menu').
                view('mascotas/mostrar',$data).
@@ -33,7 +39,6 @@ class MascotasController extends BaseController
 
         $cuidadosModel = model('CuidadosModel');
         $data['cuidados'] = $cuidadosModel->findAll();
-
 
         $data['title']="Agregar Mascotas";
         $validation = \Config\Services::validation();
@@ -70,8 +75,22 @@ class MascotasController extends BaseController
 
 
     public function insert(){
-        $mascotasModel = model('MascotasModel');
+        $db = \Config\Database::connect();
+        $resultado=$db->query('select * from mascota')->getResultArray();
 
+        foreach ($resultado as $id){
+            $valor = $id['idMascota'];
+        }
+        
+        $mascotaCuidadosModel = model('mascotaCuidadosModel');
+        $data2 = [
+            "mascota"=>$valor,
+            "cuidado"=>$_POST['idCuidados']
+        ];
+        $mascotaCuidadosModel->insert($data2);
+
+
+        $mascotasModel = model('MascotasModel');
 
         $data = [
             "nombre"=>$_POST['nombre'],
@@ -79,17 +98,9 @@ class MascotasController extends BaseController
             "caracter"=>$_POST['caracter'],
             "raza"=>$_POST['idRaza'],
             "dieta"=>$_POST['idDietas'],
-            "foto"=>$_POST['foto']
+            "foto"=>$_POST['foto'],
         ];
         $mascotasModel->insert($data,false);
-
-       /* $mascotaCuidadosModel = model('mascotaCuidadosModel');
-        $data2 = [
-            "mascota"=>,
-            "cuidado"=>$_POST['idCuidados']
-        ];
-        $mascotaCuidadosModel->insert($data2);*/
-
         return true;        
     }
 
@@ -131,12 +142,22 @@ class MascotasController extends BaseController
             "foto"=>$_POST['foto']
         );
 
-         /* $mascotaCuidadosModel = model('mascotaCuidadosModel');
+        $db = \Config\Database::connect();
+        $resultado=$db->query('select * from mascota')->getResultArray();
+
+        foreach ($resultado as $id){
+           if($id['idMascota'] == $_POST['idMascota']){
+                $valor = $id['idMascota'];
+           }
+        }
+        
+        $mascotaCuidadosModel = model('mascotaCuidadosModel');
         $data2 = [
-            "mascota"=>,
+            "mascota"=>$valor,
             "cuidado"=>$_POST['idCuidados']
         ];
-        $mascotaCuidadosModel->insert($data2);*/
+        $mascotaCuidadosModel->insert($data2);
+
 
         $mascotasModel->update($_POST['idMascota'],$data);
         return redirect('mascotas/mostrar','refresh');
@@ -172,6 +193,72 @@ class MascotasController extends BaseController
                view('common/menu').
                view('mascotas/buscar',$data).
                view('common/footer');
+    }
+
+    public function informacion($idMascota){
+        $mascotasModel=model('MascotasModel');
+        $data['mascota']=$mascotasModel->find($idMascota);
+        
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $dietasModel = model('DietasModel');
+        $data['dietas'] = $dietasModel->findAll();
+
+        $cuidadosModel = model('CuidadosModel');
+        $data['cuidados'] = $cuidadosModel->findAll();
+
+        $mascotaCuidadosModel = model('mascotaCuidadosModel');
+        $data['mascotaCuidados'] = $mascotaCuidadosModel->findAll();
+
+        return view('common/head').
+               view('common/menu').
+               view('mascotas/informacion',$data).
+               view('common/footer');
+    }
+
+
+    public function adoptar($idMascota){
+        $mascotasModel=model('MascotasModel');
+        $data['mascota']=$mascotasModel->find($idMascota);
+        
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $dietasModel = model('DietasModel');
+        $data['dietas'] = $dietasModel->findAll();
+
+        $cuidadosModel = model('CuidadosModel');
+        $data['cuidados'] = $cuidadosModel->findAll();
+
+        $mascotaCuidadosModel = model('mascotaCuidadosModel');
+        $data['mascotaCuidados'] = $mascotaCuidadosModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
+
+        return view('common/head').
+               view('common/menu').
+               view('mascotas/adoptar',$data).
+               view('common/footer');
+    }
+
+    public function updateAdopcion(){
+        $mascotasModel=model('MascotasModel');
+        $data = array(
+            "status"=>1
+        );
+
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data2 = [
+            "adoptador"=>$_POST['idAdoptador'],
+            "mascota"=>$_POST['idMascota'],
+        ];
+        $mascotaAdoptadorModel->insert($data2);
+
+
+        $mascotasModel->update($_POST['idMascota'],$data);
+        return redirect('mascotas/mostrar','refresh');
     }
 }
 

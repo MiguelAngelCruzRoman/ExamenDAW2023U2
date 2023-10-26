@@ -162,3 +162,201 @@ in APPPATH\Views\dietas\editar.php on line 13.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:14:04 --> syntax error, unexpected double-quoted string "cuidado", expecting "]"
+in APPPATH\Controllers\MascotasController.php on line 96.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\MascotasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MascotasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MascotasController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\MascotasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:14:49 --> Undefined property: App\Controllers\MascotasController::$db
+in APPPATH\Controllers\MascotasController.php on line 86.
+ 1 APPPATH\Controllers\MascotasController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MascotasController::$db', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\MascotasController.php', 86)
+ 2 APPPATH\Controllers\MascotasController.php(64): App\Controllers\MascotasController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-24 16:20:13 --> mysqli_sql_exception: Table 'adopciones.mascotas' doesn't exist in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from m...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from m...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from m...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\MascotasController.php(87): CodeIgniter\Database\BaseConnection->query('select * from m...')
+#4 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\MascotasController.php(64): App\Controllers\MascotasController->insert()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\MascotasController->agregar()
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+#7 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-10-24 16:20:13 --> Table 'adopciones.mascotas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\MascotasController.php(87): CodeIgniter\Database\BaseConnection->query('select * from mascotas')
+ 2 APPPATH\Controllers\MascotasController.php(64): App\Controllers\MascotasController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:20:54 --> Undefined array key "idMascota"
+in APPPATH\Controllers\MascotasController.php on line 92.
+ 1 APPPATH\Controllers\MascotasController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idMascota"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\MascotasController.php', 92)
+ 2 APPPATH\Controllers\MascotasController.php(64): App\Controllers\MascotasController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:27:01 --> syntax error, unexpected token "*"
+in APPPATH\Controllers\MascotasController.php on line 85.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\MascotasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MascotasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MascotasController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\MascotasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:29:45 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\MascotasController.php on line 97.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\MascotasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MascotasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MascotasController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\MascotasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:30:07 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\MascotasController.php on line 97.
+ 1 APPPATH\Controllers\MascotasController.php(64): App\Controllers\MascotasController->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->agregar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:41:38 --> Too few arguments to function App\Controllers\MascotasController::informacion(), 0 passed in C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\MascotasController.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:42:42 --> Too few arguments to function App\Controllers\MascotasController::informacion(), 0 passed in C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\MascotasController.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 16:58:56 --> syntax error, unexpected token "<"
+in APPPATH\Views\mascotas\informacion.php on line 38.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:00:45 --> syntax error, unexpected variable "$cuidado", expecting "," or ";"
+in APPPATH\Views\mascotas\informacion.php on line 38.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:01:28 --> syntax error, unexpected variable "$cuidado", expecting "," or ";"
+in APPPATH\Views\mascotas\informacion.php on line 38.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:01:51 --> syntax error, unexpected variable "$cuidado", expecting "," or ";"
+in APPPATH\Views\mascotas\informacion.php on line 38.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:02:04 --> syntax error, unexpected variable "$cuidado", expecting "," or ";"
+in APPPATH\Views\mascotas\informacion.php on line 38.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:02:10 --> syntax error, unexpected variable "$cuidado", expecting "," or ";"
+in APPPATH\Views\mascotas\informacion.php on line 38.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:02:11 --> syntax error, unexpected variable "$cuidado", expecting "," or ";"
+in APPPATH\Views\mascotas\informacion.php on line 38.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:02:18 --> Undefined property: stdClass::$idMascota
+in APPPATH\Views\mascotas\informacion.php on line 36.
+ 1 APPPATH\Views\mascotas\informacion.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idMascota', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\informacion.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\informacion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 17:02:33 --> Undefined property: stdClass::$idMascota
+in APPPATH\Views\mascotas\informacion.php on line 36.
+ 1 APPPATH\Views\mascotas\informacion.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idMascota', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\informacion.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\informacion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-24 20:25:08 --> Undefined property: stdClass::$idMascota
+in APPPATH\Views\mascotas\informacion.php on line 36.
+ 1 APPPATH\Views\mascotas\informacion.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idMascota', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\informacion.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\informacion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/informacion', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(211): view('mascotas/informacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->informacion('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')

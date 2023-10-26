@@ -29,11 +29,15 @@ $routes->get('mascotas/mostrar','MascotasController::mostrar');
 $routes->get('mascotas/agregar','MascotasController::agregar');
 $routes->get('mascotas/delete/(:num)','MascotasController::delete/$1');
 $routes->get('mascotas/editar/(:num)','MascotasController::editar/$1');
+$routes->get('mascotas/adoptar/(:num)','MascotasController::adoptar/$1');
 $routes->get('mascotas/buscar','MascotasController::buscar');
+$routes->get('mascotas/informacion/(:num)','MascotasController::informacion/$1');
 
 $routes->post('mascotas/agregar','MascotasController::agregar');
+$routes->post('mascotas/informacion','MascotasController::informacion');
 $routes->post('mascotas/insert','MascotasController::insert');
 $routes->post('mascotas/update','MascotasController::update');
+$routes->post('mascotas/updateAdopcion','MascotasController::updateAdopcion');
 //-----------------------------------------------------------------------------------------------------
 
 
