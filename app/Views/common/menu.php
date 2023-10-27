@@ -41,27 +41,13 @@
           </ul>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link " href="<?= base_url('index.php/usuario/perros') ?>" role="button">
             Perros 🐶
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= base_url('index.php/alumno/agregar');?>">Agregar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/alumno/mostrar') ?>">Mostrar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/alumno/buscar') ?>">Buscar</a></li>
-          </ul>
-        </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="<?= base_url('index.php/usuario/gatos') ?>" role="button">
             Gatos 🐱
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= base_url('index.php/materia/agregar');?>">Agregar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/materia/mostrar') ?>">Mostrar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/materia/buscar') ?>">Buscar</a></li>
-          </ul>
-        </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,7 +59,16 @@
             <li><a class="dropdown-item" href="<?= base_url('index.php/adoptador/buscar') ?>">Buscar</a></li>
           </ul>
         </li>
+
+        <a class="nav-link " href="<?= base_url('admin/graficas');?>" role="button" >
+            Gráficas 📊
+        </a>
+        
+
       </ul>
+      <a class="nav-link " href="<?= base_url('/');?>" role="button" >
+            Vista de usuario 👁
+        </a>
     </div>
   </div>
 </nav>

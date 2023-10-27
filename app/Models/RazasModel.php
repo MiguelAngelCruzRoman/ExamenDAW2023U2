@@ -13,7 +13,7 @@ class RazasModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idRaza','nombre','origen','esperanzaVida','largo','alto','color','tamañoPelaje','tipoPelaje'];
+    protected $allowedFields    = ['idRaza','tipo','nombre','origen','esperanzaVida','largo','alto','color','tamañoPelaje','tipoPelaje'];
 
     // Dates
     protected $useTimestamps = false;

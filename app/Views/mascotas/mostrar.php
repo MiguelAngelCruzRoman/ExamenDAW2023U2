@@ -22,7 +22,7 @@
                         <?php endif;?>
                         <?php foreach ($razas as $raza): ?>
                             <?php if ($mascota->raza == $raza->idRaza): ?>
-                            <p class="card-text">Raza: <?= $raza->nombre ?> (<?= $raza->origen ?>)</p>
+                                <p class="card-text">Raza de <?= $raza->tipo.': '. $raza->nombre. ' ('.$raza->origen.')'?></p>
                             <?php endif;?>
                         <?php endforeach; ?>
                         <p class="card-text">Personalidad: <?= $mascota->caracter ?></p>

@@ -33,73 +33,100 @@
         </div>
     </div>
 
-    <div class="container mt-5">
+    <br><br>
+    <div class="container">
+        <h2>Algunas de las mascotas adoptadas...</h2>
         <div class="row">
-            <div class="col-md-12">
-                <h2>Mascotas Adoptadas</h2>
-                <div id="adoptedCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#adoptedCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#adoptedCarousel" data-slide-to="1"></li>
-                        <li data-target="#adoptedCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="adopted_pet_1.jpg" class="d-block w-100" alt="Mascota 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="adopted_pet_2.jpg" class="d-block w-100" alt="Mascota 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="adopted_pet_3.jpg" class="d-block w-100" alt="Mascota 3">
+            <?php $contadorTarjetas = 0;foreach ($mascotas as $mascota): if ($mascota->status == 1 && $contadorTarjetas < 9):?>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="<?= $mascota->foto ?>" class="card-img-top" alt="<?= $mascota->nombre ?>" height="200" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <?= $mascota->nombre ?> (<?= $mascota->edad ?> años)
+                        </h5>
+                        <?php if ($mascota->status == 1):
+                            foreach ($adopciones as $adopcion):
+                                if ($adopcion->mascota == $mascota->idMascota):
+                                    foreach ($adoptadores as $adoptador):
+                                        if ($adopcion->adoptador == $adoptador->idAdoptador):?>
+                        <p class="card-text">Adoptado por: <?= $adoptador->primerNombre.' '.$adoptador->segundoNombre.' '.$adoptador->apellidoPaterno.' '.$adoptador->apellidoMaterno ?></p>
+                        <?php
+                                        endif;
+                                    endforeach;
+                                endif;
+                            endforeach;
+                        endif;
+                        foreach ($razas as $raza):
+                            if ($mascota->raza == $raza->idRaza):?>
+                        <p class="card-text">Raza de <?= $raza->tipo.': '. $raza->nombre. ' ('.$raza->origen.')' ?></p>
+                        <?php
+                            endif;
+                        endforeach;
+                        ?>
+                        <p class="card-text">Personalidad: <?= $mascota->caracter ?></p>
+                        <div class="text-center">
+                            <a href="<?= base_url('/mascotas/adoptar/' . $mascota->idMascota) ?>" class="btn btn-success">Adoptar</a>
+                            <a href="<?= base_url('/mascotas/informacion/' . $mascota->idMascota) ?>" class="btn btn-secondary">Saber más</a>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#adoptedCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#adoptedCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
                 </div>
             </div>
+            <?php
+                $contadorTarjetas++;
+                endif;
+            endforeach;
+            ?>
         </div>
     </div>
 
-    <div class="container mt-5">
+    <br><br>
+    <div class="container">
+        <h2>Algunas de las mascotas en adopción...</h2>
         <div class="row">
-            <div class="col-md-12">
-                <h2>Mascotas en Adopción</h2>
-                <div id="availableCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#availableCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#availableCarousel" data-slide-to="1"></li>
-                        <li data-target="#availableCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="available_pet_1.jpg" class="d-block w-100" alt="Mascota 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="available_pet_2.jpg" class="d-block w-100" alt="Mascota 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="available_pet_3.jpg" class="d-block w-100" alt="Mascota 3">
+            <?php $contadorTarjetas = 0;foreach ($mascotas as $mascota): if ($mascota->status == 0 && $contadorTarjetas < 9):?>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="<?= $mascota->foto ?>" class="card-img-top" alt="<?= $mascota->nombre ?>" height="200" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <?= $mascota->nombre ?> (<?= $mascota->edad ?> años)
+                        </h5>
+                        <?php if ($mascota->status == 1):
+                            foreach ($adopciones as $adopcion):
+                                if ($adopcion->mascota == $mascota->idMascota):
+                                    foreach ($adoptadores as $adoptador):
+                                        if ($adopcion->adoptador == $adoptador->idAdoptador):?>
+                        <p class="card-text">Adoptado por: <?= $adoptador->primerNombre.' '.$adoptador->segundoNombre.' '.$adoptador->apellidoPaterno.' '.$adoptador->apellidoMaterno ?></p>
+                        <?php
+                                        endif;
+                                    endforeach;
+                                endif;
+                            endforeach;
+                        endif;
+                        foreach ($razas as $raza):
+                            if ($mascota->raza == $raza->idRaza):?>
+                        <p class="card-text">Raza de <?= $raza->tipo.': '. $raza->nombre. ' ('.$raza->origen.')' ?></p>
+                        <?php
+                            endif;
+                        endforeach;
+                        ?>
+                        <p class="card-text">Personalidad: <?= $mascota->caracter ?></p>
+                        <div class="text-center">
+                            <a href="<?= base_url('/mascotas/adoptar/' . $mascota->idMascota) ?>" class="btn btn-success">Adoptar</a>
+                            <a href="<?= base_url('/mascotas/informacion/' . $mascota->idMascota) ?>" class="btn btn-secondary">Saber más</a>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#availableCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#availableCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
                 </div>
             </div>
+            <?php
+                $contadorTarjetas++;
+                endif;
+            endforeach;
+            ?>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

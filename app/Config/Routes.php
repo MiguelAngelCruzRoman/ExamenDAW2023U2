@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+
 
 //-----------------------------------------------------------------------------------------------------
 // Rutas para los adoptadores
@@ -69,3 +69,14 @@ $routes->post('dietas/agregar','DietasController::agregar');
 $routes->post('dietas/insert','DietasController::insert');
 $routes->post('dietas/update','DietasController::update');
 //-----------------------------------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------------------------------
+// Rutas para los usuarios
+//-----------------------------------------------------------------------------------------------------
+$routes->get('usuario/mascotas','UsuariosController::mascotas');
+$routes->get('usuario/perros','UsuariosController::perros');
+$routes->get('usuario/gatos','UsuariosController::gatos');
+$routes->get('/', 'UsuariosController::index');
+$routes->get('admin', 'MascotasController::mostrarAdoptadas');
+$routes->get('admin/graficas', 'MascotasController::graficas');

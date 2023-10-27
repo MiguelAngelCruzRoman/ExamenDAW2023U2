@@ -4,7 +4,7 @@
 
         <h1>Buscar Mascotas</h1>
 
-        <form action="<?= base_url('index.php/mascotas/buscar/'); ?>" method="GET">
+        <form action="<?= base_url('index.php/mascotas/buscarUsuario/'); ?>" method="GET">
             <label for="nombre">Nombre:</label>
             <input type="text" class="form-control" name="nombre" >
             <lable for="idRaza" class="form-label">Raza:</lable>

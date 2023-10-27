@@ -28,7 +28,7 @@
                     <lable for="idRaza" class="form-label">Raza:</lable>
                     <select name="idRaza" class="form-control" value="<?=$mascota->raza?>">
                         <?php foreach($razas as $raza): ?>
-                            <option value="<?= $raza->idRaza?>"> <?= $raza->nombre?> (<?= $raza->origen?>)</option>
+                            <option value="<?= $raza->idRaza?>">Raza de <?=$raza->tipo.': '. $raza->nombre?> (<?= $raza->origen?>)</option>
                         <?php endforeach; ?>
                     </select>
                 </div>
@@ -37,7 +37,11 @@
                     <lable for="idDietas" class="form-label">Dieta:</lable>
                     <select name="idDietas" class="form-control" value="<?=$mascota->dieta?>">
                         <?php foreach($dietas as $dieta): ?>
-                            <option value="<?= $dieta->idDietas?>"><?= $dieta->porcionesDiarias?> porciones diarias de <?= ($dieta->carnes)*100?>g de carne, <?= ($dieta->visceras)*100?>g de vísceras, <?= ($dieta->pescado)*100?>g de pescado, <?= ($dieta->cereales)*100?>g de cereales</option>
+                            <?php if($dieta->idDietas == $mascota->dieta):?>
+                                <option value="<?= $dieta->idDietas?>" selected><?= $dieta->porcionesDiarias?> porciones diarias de <?= ($dieta->carnes)*100?>g de carne, <?= ($dieta->visceras)*100?>g de vísceras, <?= ($dieta->pescado)*100?>g de pescado, <?= ($dieta->cereales)*100?>g de cereales</option>
+                            <?php else:?>
+                                <option value="<?= $dieta->idDietas?>"><?= $dieta->porcionesDiarias?> porciones diarias de <?= ($dieta->carnes)*100?>g de carne, <?= ($dieta->visceras)*100?>g de vísceras, <?= ($dieta->pescado)*100?>g de pescado, <?= ($dieta->cereales)*100?>g de cereales</option>
+                            <?php endif;?>
                         <?php endforeach; ?>
                     </select>
                 </div>
@@ -46,7 +50,7 @@
                     <lable for="idCuidados" class="form-label">Cuidado:</lable>
                     <select name="idCuidados" class="form-control" ><!--Falta recuperar el dato de la tabla muchos a muchos mascota_cuidados -->
                         <?php foreach($cuidados as $cuidado): ?>
-                            <option value="<?= $cuidado->idCuidados?>"><?= $cuidado->tipo?> <?= $cuidado->cantidadCuidado?> veces (<?= $cuidado->frecuenciaCuidado?>)</option>
+                            <option value="<?= $cuidado->idCuidados?>"><?= $cuidado->tipo?> <?= $cuidado->cantidadCuidado?> veces (<?= $cuidado->frecuenciaCuidado?>)</option>                       
                         <?php endforeach; ?>
                     </select>
                 </div>

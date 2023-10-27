@@ -114,15 +114,13 @@ class RazasController extends BaseController
 
         if(isset($_GET['nombre']) || isset($_GET['origen']) || isset($_GET['tamaño'])){
             $nombre = $_GET['nombre'];
-            $origen = $_GET['origen'];
-                       
-            // Revisar la búsqueda por tamaño
+            $origen = $_GET['origen'];           
             $largo = $_GET['tamaño'];
             $alto = $_GET['tamaño'];
             $data['razas']=$razasModel->like('nombre',$nombre)
                             ->like('origen',$origen)
                             ->like('largo',$largo)
-                            ->like('alto',$alto)
+                            ->orlike('alto',$alto)
                             ->findAll();
         }
         else {

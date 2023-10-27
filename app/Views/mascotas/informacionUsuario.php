@@ -2,23 +2,20 @@
     <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-            <form action="<?= base_url('index.php/mascotas/updateAdopcion');?>" method="POST">
-            <?= csrf_field()?>
-                <h2>Adoptar mascota</h2>
-
-                <input type="hidden" name="idMascota" value="<?=$mascota->idMascota?>">
-
-                <div class="card">
+            <br>
+            <div class="card">
                 <h2 class="card-title text-center">¡Conoce a <?=$mascota->nombre?>!</h2>
 
                 <img src="<?= $mascota->foto ?>" class="card-img-top" alt="<?= $mascota->nombre ?>">
                 <div class="card-body text-center">
                     <h4 class="card-text">Edad: <?=$mascota->edad?> años</h4>
-                    
-                    <h4 class="card-text">Raza de
+
+                    <h4 class="card-text">Status: <?=$mascota->status?> </h4>
+
+                    <h4 class="card-text">Raza:  
                         <?php foreach($razas as $raza): ?>
                             <?php if($raza->idRaza == $mascota->raza): ?> 
-                            <?php $raza->tipo.': ' $raza->nombre. ' ('.$raza->origen.')'?>
+                            <?= $raza->nombre?> (<?= $raza->origen?>)
                             <?php endif; ?>
                         <?php endforeach; ?>
                     </h4>
@@ -58,23 +55,17 @@
                 </div>
             </div>
 
-            <div class="mb-3">
-                    <h4 for="idAdoptador" class="form-label">Adoptador:</h4>
-                    <select name="idAdoptador" class="form-control">
-                        <?php foreach($adoptadores as $adoptador): ?>
-                            <option value="<?= $adoptador->idAdoptador?>"><?= $adoptador->primerNombre.' '.$adoptador->segundoNombre.' '.$adoptador->apellidoPaterno.' '.$adoptador->apellidoMaterno.' ('.$adoptador->CURP.')'?></option>
-                        <?php endforeach; ?>
-                    </select>
-                </div>
-
-
-                <div class="mb-3">
-                    <input type="submit" class="btn btn-success">
-                </div>
-            </form>
-
-            <div class="col-2"></div>
-
+            <div class="text-center mt-3">
+                <form action="<?= base_url('index.php/mascotas/mostrarUsuario');?>" method="get">
+                    <input type="submit" class="btn btn-primary" value="Regresar">
+                </form><br><br>
+            </div>
+            <div class="text-center mt-3">
+                <form action="<?= base_url('index.php/mascotas/adoptar/' . $mascota->idMascota) ?>" method="get">
+                    <input type="submit" class="btn btn-success" value="Adoptar">
+                </form><br><br>
+            </div>
         </div>
+        <div class="col-2"></div>
     </div>
 </div>

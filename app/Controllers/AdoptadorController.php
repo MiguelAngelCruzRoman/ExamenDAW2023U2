@@ -15,6 +15,22 @@ class AdoptadorController extends BaseController
         $alumnoModel = model('AdoptadorModel');
         $data['adoptadores']=$alumnoModel->findAll();
 
+        $db = \Config\Database::connect();
+        $MAS=$db->query('select ma.idMascotaAdoptador as "idMA",ma.created_at as "fechaAdopcion", 
+                                m.nombre as "nombreM",
+                                a.idAdoptador as "idA",a.primerNombre, a.segundoNombre, a.apellidoPaterno,
+                                a.apellidoMaterno, a.foto as "fotoA",r.nombre as "nr", r.origen as "or" 
+                                from mascota_adoptador as ma join mascota as m on m.idMascota = ma.mascota 
+                                join adoptador as a on a.idAdoptador = ma.adoptador
+                                join razas as r on m.raza=r.idRaza')->getResultArray();
+        $data=[
+            'MAS'=>$MAS,
+            'adoptadores' =>$alumnoModel->findAll()
+        ];
+
+        //print_R($data['MAS'][0]);
+
+
         return view('common/head').
                view('common/menu').
                view('adoptador/mostrar',$data).
@@ -73,6 +89,7 @@ class AdoptadorController extends BaseController
             "CIC"=>$_POST['CIC'],
             "CURP"=>$_POST['CURP'],
             "foto"=>$_POST['foto'],
+            "created_at"=>time()
         ];
 
         $tiempo = strtotime($_POST['fechaNacimiento']); 

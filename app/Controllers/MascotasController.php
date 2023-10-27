@@ -123,6 +123,9 @@ class MascotasController extends BaseController
         $cuidadosModel = model('CuidadosModel');
         $data['cuidados'] = $cuidadosModel->findAll();
 
+        $mascotaCuidadosModel = model('mascotaCuidadosModel');
+        $data['mcs'] = $mascotaCuidadosModel->findAll();
+        
 
         return view('common/head').
                view('common/menu').
@@ -245,6 +248,8 @@ class MascotasController extends BaseController
 
     public function updateAdopcion(){
         $mascotasModel=model('MascotasModel');
+        $adoptadorModel = model('AdoptadorModel');
+
         $data = array(
             "status"=>1
         );
@@ -258,7 +263,45 @@ class MascotasController extends BaseController
 
 
         $mascotasModel->update($_POST['idMascota'],$data);
+        $adoptadorModel->update($_POST['idAdoptador'],$data);
         return redirect('mascotas/mostrar','refresh');
     }
+
+    public function mostrarAdoptadas(){
+        $mascotasModel = model('MascotasModel');
+        $data['mascotas']=$mascotasModel->findAll();
+
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $adoptadorModel = model('AdoptadorModel');
+        $data['adoptadores']=$adoptadorModel->findAll();
+
+        return view('common/head').
+               view('common/menu').
+               view('welcome_message',$data).
+               view('common/footer');
+    }
+
+    public function graficas(){
+        $mascotasModel = model('MascotasModel');
+        $data['mascotas']=$mascotasModel->findAll();
+
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $adoptadorModel = model('AdoptadorModel');
+        $data['adoptadores']=$adoptadorModel->findAll();
+
+        return view('common/head').
+               view('common/menu').
+               view('common/graficas',$data).
+               view('common/footer');
+    }
+
+
 }
 

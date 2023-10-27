@@ -26,7 +26,7 @@
                     <lable for="idRaza" class="form-label">Raza:</lable>
                     <select name="idRaza" class="form-control">
                         <?php foreach($razas as $raza): ?>
-                            <option value="<?= $raza->idRaza?>"> <?= $raza->nombre?> (<?= $raza->origen?>)</option>
+                            <option value="<?= $raza->idRaza?>">Raza de <?= $raza->tipo.': '.$raza->nombre?> (<?= $raza->origen?>)</option>
                         <?php endforeach; ?>
                     </select>
                 </div>

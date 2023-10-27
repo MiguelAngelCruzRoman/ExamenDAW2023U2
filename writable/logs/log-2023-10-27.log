@@ -1,0 +1,739 @@
+CRITICAL - 2023-10-27 00:49:47 --> Undefined variable $postsM
+in APPPATH\Controllers\AdoptadorController.php on line 22.
+ 1 APPPATH\Controllers\AdoptadorController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsM', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 00:50:08 --> Call to undefined function App\Controllers\db()
+in APPPATH\Controllers\AdoptadorController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-27 00:51:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from m...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from m...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from m...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select * from m...')
+#4 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-27 00:51:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select * from mascota_adoptador as ma join mascota as m on m.idMascota = mc.mascota join ')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-27 00:52:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from m...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from m...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from m...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select * from m...')
+#4 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-27 00:52:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select * from mascota_adoptador as ma join mascota as m on m.idMascota = ma.mascota join ')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 00:58:16 --> Undefined array key "idMA"
+in APPPATH\Controllers\AdoptadorController.php on line 29.
+ 1 APPPATH\Controllers\AdoptadorController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idMA"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:01:21 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\AdoptadorController.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdoptadorController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdoptadorController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdoptadorController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:03:52 --> syntax error, unexpected token "if"
+in APPPATH\Views\adoptador\mostrar.php on line 13.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 3 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:04:32 --> syntax error, unexpected token "if"
+in APPPATH\Views\adoptador\mostrar.php on line 14.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 3 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:10:45 --> syntax error, unexpected token ";"
+in APPPATH\Views\adoptador\mostrar.php on line 19.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 3 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:10:55 --> syntax error, unexpected token "endif"
+in APPPATH\Views\adoptador\mostrar.php on line 20.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 3 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:11:06 --> Attempt to read property "idA" on array
+in APPPATH\Views\adoptador\mostrar.php on line 17.
+ 1 APPPATH\Views\adoptador\mostrar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idA" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:11:21 --> Attempt to read property "idA" on array
+in APPPATH\Views\adoptador\mostrar.php on line 17.
+ 1 APPPATH\Views\adoptador\mostrar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idA" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:11:43 --> Array to string conversion
+in APPPATH\Controllers\AdoptadorController.php on line 30.
+ 1 APPPATH\Controllers\AdoptadorController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\AdoptadorController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:12:40 --> Attempt to read property "idMA" on array
+in APPPATH\Views\adoptador\mostrar.php on line 17.
+ 1 APPPATH\Views\adoptador\mostrar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idMA" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:12:53 --> Undefined variable $edad
+in APPPATH\Views\adoptador\mostrar.php on line 17.
+ 1 APPPATH\Views\adoptador\mostrar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $edad', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:12:58 --> Attempt to read property "edad" on array
+in APPPATH\Views\adoptador\mostrar.php on line 17.
+ 1 APPPATH\Views\adoptador\mostrar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "edad" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:14:17 --> Attempt to read property "nombreM" on array
+in APPPATH\Views\adoptador\mostrar.php on line 19.
+ 1 APPPATH\Views\adoptador\mostrar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombreM" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(35): view('adoptador/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-27 01:18:04 --> mysqli_sql_exception: Unknown column 'a.idAdoptador' in 'field list' in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select ma.idMas...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select ma.idMas...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select ma.idMas...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select ma.idMas...')
+#4 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-27 01:18:04 --> Unknown column 'a.idAdoptador' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select ma.idMascotaAdoptador as "idMA",ma.created_at as "fechaAdopcion", 
+                                m.nombre as "nombreM",
+                                a.idAdoptador as "idA",a.primerNombre, a.segundoNombre, a.apellidoPaterno,
+                                a.apellidoMaterno, a.foto as "fotoA" 
+                                from mascota_adoptador as ma join mascota as m on m.idMascota = ma.mascota')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-27 01:19:43 --> mysqli_sql_exception: Table 'adopciones.raza' doesn't exist in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select ma.idMas...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select ma.idMas...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select ma.idMas...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select ma.idMas...')
+#4 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-27 01:19:43 --> Table 'adopciones.raza' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select ma.idMascotaAdoptador as "idMA",ma.created_at as "fechaAdopcion", 
+                                m.nombre as "nombreM",
+                                a.idAdoptador as "idA",a.primerNombre, a.segundoNombre, a.apellidoPaterno,
+                                a.apellidoMaterno, a.foto as "fotoA" 
+                                from mascota_adoptador as ma join mascota as m on m.idMascota = ma.mascota 
+                                join adoptador as a on a.idAdoptador = ma.adoptador
+                                join raza as r on m.raza=r.idRaza')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-27 01:19:50 --> mysqli_sql_exception: Table 'adopciones.raza' doesn't exist in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select ma.idMas...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select ma.idMas...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select ma.idMas...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select ma.idMas...')
+#4 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-27 01:19:50 --> Table 'adopciones.raza' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\AdoptadorController.php(19): CodeIgniter\Database\BaseConnection->query('select ma.idMascotaAdoptador as "idMA",ma.created_at as "fechaAdopcion", 
+                                m.nombre as "nombreM",
+                                a.idAdoptador as "idA",a.primerNombre, a.segundoNombre, a.apellidoPaterno,
+                                a.apellidoMaterno, a.foto as "fotoA" 
+                                from mascota_adoptador as ma join mascota as m on m.idMascota = ma.mascota 
+                                join adoptador as a on a.idAdoptador = ma.adoptador
+                                join raza as r on m.raza=r.idRaza')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:21:37 --> Undefined array key "rn"
+in APPPATH\Views\adoptador\mostrar.php on line 18.
+ 1 APPPATH\Views\adoptador\mostrar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rn"', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\adoptador\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('adoptador/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(36): view('adoptador/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:40:37 --> syntax error, unexpected variable "$raza"
+in APPPATH\Views\mascotas\mostrar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/mostrar', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(29): view('mascotas/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:41:01 --> syntax error, unexpected variable "$raza"
+in APPPATH\Views\mascotas\mostrar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/mostrar', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(29): view('mascotas/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:41:24 --> syntax error, unexpected variable "$raza", expecting "," or ";"
+in APPPATH\Views\mascotas\mostrar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/mostrar', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(29): view('mascotas/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 01:42:14 --> syntax error, unexpected variable "$raza", expecting "," or ";"
+in APPPATH\Views\mascotas\mostrar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/mostrar', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(29): view('mascotas/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:08:14 --> Undefined property: stdClass::$idDieta
+in APPPATH\Views\mascotas\editar.php on line 40.
+ 1 APPPATH\Views\mascotas\editar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idDieta', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(129): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:08:22 --> Undefined property: stdClass::$idDieta
+in APPPATH\Views\mascotas\editar.php on line 40.
+ 1 APPPATH\Views\mascotas\editar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idDieta', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(129): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-27 02:13:55 --> mysqli_sql_exception: Table 'adopciones.cuidado' doesn't exist in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from m...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from m...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from m...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\MascotasController.php(124): CodeIgniter\Database\BaseConnection->query('select * from m...')
+#4 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-27 02:13:55 --> Table 'adopciones.cuidado' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\MascotasController.php(124): CodeIgniter\Database\BaseConnection->query('select * from mascota_cuidados as mc 
+                                join cuidado as c on c.idCuidados = mc.cuidado')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:14:04 --> Undefined variable $resultado
+in APPPATH\Controllers\MascotasController.php on line 128.
+ 1 APPPATH\Controllers\MascotasController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\MascotasController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:18:37 --> syntax error, unexpected token "<"
+in APPPATH\Views\mascotas\editar.php on line 54.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [...], true)
+ 3 APPPATH\Controllers\MascotasController.php(135): view('mascotas/editar', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+ERROR - 2023-10-27 02:21:05 --> mysqli_sql_exception: Unknown column '$idMascota' in 'where clause' in C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ExamenDAWU2\system\Database\MySQLi\Connection.php(306): mysqli->query('select c.*,mc.m...', 0)
+#1 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select c.*,mc.m...')
+#2 C:\xampp\htdocs\ExamenDAWU2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select c.*,mc.m...')
+#3 C:\xampp\htdocs\ExamenDAWU2\app\Controllers\MascotasController.php(124): CodeIgniter\Database\BaseConnection->query('select c.*,mc.m...')
+#4 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+#5 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+#6 C:\xampp\htdocs\ExamenDAWU2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ExamenDAWU2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ExamenDAWU2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-27 02:21:05 --> Unknown column '$idMascota' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\MascotasController.php(124): CodeIgniter\Database\BaseConnection->query('select c.*,mc.mascota as "idM" from mascota_cuidados as mc 
+                                join cuidados as c on c.idCuidados = mc.cuidado
+                                where mc.mascota = $idMascota')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:22:57 --> Undefined variable $cuidados
+in APPPATH\Views\mascotas\editar.php on line 52.
+ 1 APPPATH\Views\mascotas\editar.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cuidados', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [...], true)
+ 5 APPPATH\Controllers\MascotasController.php(135): view('mascotas/editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:23:34 --> Undefined variable $mc
+in APPPATH\Views\mascotas\editar.php on line 53.
+ 1 APPPATH\Views\mascotas\editar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mc', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [...], true)
+ 5 APPPATH\Controllers\MascotasController.php(138): view('mascotas/editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:24:12 --> Undefined variable $ms
+in APPPATH\Views\mascotas\editar.php on line 49.
+ 1 APPPATH\Views\mascotas\editar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ms', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [...], true)
+ 5 APPPATH\Controllers\MascotasController.php(138): view('mascotas/editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:24:18 --> Undefined variable $mc
+in APPPATH\Views\mascotas\editar.php on line 49.
+ 1 APPPATH\Views\mascotas\editar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mc', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [...], true)
+ 5 APPPATH\Controllers\MascotasController.php(138): view('mascotas/editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:24:57 --> Call to a member function findAll() on array
+in APPPATH\Controllers\MascotasController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:25:05 --> Call to a member function find() on array
+in APPPATH\Controllers\MascotasController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:25:11 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\MascotasController.php on line 134.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\MascotasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MascotasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MascotasController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\MascotasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:25:33 --> Attempt to read property "idM" on array
+in APPPATH\Views\mascotas\editar.php on line 53.
+ 1 APPPATH\Views\mascotas\editar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idM" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:26:39 --> Attempt to read property "idM" on array
+in APPPATH\Views\mascotas\editar.php on line 54.
+ 1 APPPATH\Views\mascotas\editar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idM" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:27:23 --> Attempt to read property "idM" on array
+in APPPATH\Views\mascotas\editar.php on line 55.
+ 1 APPPATH\Views\mascotas\editar.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idM" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 55)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:29:04 --> Attempt to read property "idM" on array
+in APPPATH\Views\mascotas\editar.php on line 55.
+ 1 APPPATH\Views\mascotas\editar.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idM" on array', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 55)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:29:28 --> Array to string conversion
+in APPPATH\Views\mascotas\editar.php on line 55.
+ 1 APPPATH\Views\mascotas\editar.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 55)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:29:37 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\mascotas\editar.php on line 55.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:32:42 --> Array to string conversion
+in APPPATH\Views\mascotas\editar.php on line 49.
+ 1 APPPATH\Views\mascotas\editar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:41:09 --> syntax error, unexpected token ")"
+in APPPATH\Views\mascotas\editar.php on line 53.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 3 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:42:27 --> Undefined array key 0
+in APPPATH\Views\mascotas\editar.php on line 53.
+ 1 APPPATH\Views\mascotas\editar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:43:08 --> Undefined array key 0
+in APPPATH\Views\mascotas\editar.php on line 53.
+ 1 APPPATH\Views\mascotas\editar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:44:14 --> Undefined array key 0
+in APPPATH\Views\mascotas\editar.php on line 53.
+ 1 APPPATH\Views\mascotas\editar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(136): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 02:55:30 --> Undefined variable $cuidado
+in APPPATH\Views\mascotas\editar.php on line 54.
+ 1 APPPATH\Views\mascotas\editar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cuidado', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\mascotas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mascotas/editar', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(132): view('mascotas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 03:17:11 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+in APPPATH\Views\welcome_message.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 03:20:26 --> Undefined variable $mascotas
+in APPPATH\Views\welcome_message.php on line 39.
+ 1 APPPATH\Views\welcome_message.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\welcome_message.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(11): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 03:45:52 --> include(C:\xampp\htdocs\ExamenDAWU2\app\Views\common\graficas.php): Failed to open stream: Resource temporarily unavailable
+in SYSTEMPATH\View\View.php on line 228.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\common\\graficas.php): Failed to open stream: Resource temporarily unavailable', 'C:\\xampp\\htdocs\\ExamenDAWU2\\system\\View\\View.php', 228)
+ 2 SYSTEMPATH\View\View.php(228): include()
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('common/graficas', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(301): view('common/graficas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->graficas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 03:56:37 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\common\graficas.php on line 83.
+ 1 APPPATH\Views\common\graficas.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\common\\graficas.php', 83)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\common\\graficas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('common/graficas', [], true)
+ 5 APPPATH\Controllers\MascotasController.php(298): view('common/graficas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MascotasController->graficas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotasController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:17:33 --> Undefined variable $mascotas
+in APPPATH\Views\welcome_message.php on line 40.
+ 1 APPPATH\Views\welcome_message.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\welcome_message.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(11): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:37:30 --> syntax error, unexpected token "=", expecting ")"
+in APPPATH\Controllers\UsuariosController.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\UsuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\UsuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:37:38 --> syntax error, unexpected token "=", expecting ")"
+in APPPATH\Controllers\UsuariosController.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\UsuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\UsuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:39:25 --> Call to undefined method App\Models\MascotasModel::get_where
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UsuariosController.php(46): CodeIgniter\Model->__call('get_where', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuariosController->mascotas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:40:30 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\ExamenDAWU2\system\Model.php on line 871
+in SYSTEMPATH\Database\BaseBuilder.php on line 1607.
+ 1 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get('raza', '')
+ 2 APPPATH\Controllers\UsuariosController.php(46): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuariosController->mascotas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:41:44 --> Undefined constant "App\Controllers\none"
+in APPPATH\Controllers\UsuariosController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuariosController->mascotas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:42:00 --> CodeIgniter\Database\BaseBuilder::like(): Argument #3 ($side) must be of type string, null given, called in C:\xampp\htdocs\ExamenDAWU2\system\Model.php on line 871
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->like('raza', '', null)
+ 2 APPPATH\Controllers\UsuariosController.php(46): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuariosController->mascotas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:54:44 --> syntax error, unexpected identifier "findAll"
+in APPPATH\Controllers\UsuariosController.php on line 109.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ExamenDAWU2\\app\\Controllers\\UsuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\UsuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')
+CRITICAL - 2023-10-27 04:54:54 --> Object of class App\Models\MascotasModel could not be converted to string
+in APPPATH\Controllers\UsuariosController.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsuariosController->gatos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ExamenDAWU2\\public\\index.php')

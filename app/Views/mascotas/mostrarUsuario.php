@@ -4,14 +4,12 @@
 
         <h1>Buscar Mascotas</h1>
 
-        <form action="<?= base_url('index.php/mascotas/buscar/'); ?>" method="GET">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" name="nombre" >
+        <form action="<?= base_url('index.php/usuario/mascotas/'); ?>" method="GET">
             <lable for="idRaza" class="form-label">Raza:</lable>
                 <select name="idRaza" class="form-control">
-                    <option value="" select>Cualquier tipo</option>
+                    <option value="%%" select>Cualquier tipo</option>
                     <?php foreach($razas as $raza): ?>
-                        <option value="<?= $raza->idRaza?>"><?=$raza->tipo.': '.$raza->nombre?> (<?= $raza->origen?>)</option>
+                        <option value="<?= $raza->idRaza?>"><?=$raza->tipo.': '.$raza->nombre?> (<?=$raza->origen?> )</option>
                     <?php endforeach; ?>
                 </select>
             <input type="submit" class="btn btn-success mt-4" value="Buscar">
@@ -41,8 +39,6 @@
                                     <?php endforeach; ?>
                                     <p class="card-text">Personalidad: <?= $mascota->caracter ?></p>
                                     <div class="text-center">
-                                        <a href="<?= base_url('/mascotas/delete/' . $mascota->idMascota) ?>" class="btn btn-danger">Eliminar</a>
-                                        <a href="<?= base_url('/mascotas/editar/' . $mascota->idMascota) ?>" class="btn btn-warning">Editar</a>
                                         <a href="<?= base_url('/mascotas/adoptar/' . $mascota->idMascota) ?>" class="btn btn-success">Adoptar</a>
                                         <a href="<?= base_url('/mascotas/informacion/' . $mascota->idMascota) ?>" class="btn btn-secondary">Saber más</a>
                                     </div>
