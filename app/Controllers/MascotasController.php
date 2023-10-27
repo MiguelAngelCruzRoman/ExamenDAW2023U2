@@ -178,6 +178,12 @@ class MascotasController extends BaseController
         $cuidadosModel = model('CuidadosModel');
         $data['cuidados'] = $cuidadosModel->findAll();
 
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
+
         if(isset($_GET['nombre']) || isset($_GET['idRaza'])){
             $nombre = $_GET['nombre'];
             $idRaza = $_GET['idRaza'];
@@ -302,6 +308,74 @@ class MascotasController extends BaseController
                view('common/footer');
     }
 
+    public function perros(){
+        $mascotasModel = model('MascotasModel');
 
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $dietasModel = model('DietasModel');
+        $data['dietas'] = $dietasModel->findAll();
+
+        $cuidadosModel = model('CuidadosModel');
+        $data['cuidados'] = $cuidadosModel->findAll();
+
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
+
+        if(isset($_GET['idRaza'])){
+            $idRaza = $_GET['idRaza'];
+
+            $data['mascotas']=$mascotasModel->like('raza', $idRaza,$side='none')
+                            ->findAll();
+        }
+        else {
+            $idRaza="";
+            $data['mascotas']=$mascotasModel->like('raza', 'Perro',$side='none')->findAll();
+        }
+
+        return view('common/head').
+               view('common/menu').
+               view('mascotas/perros',$data).
+               view('common/footer');
+    }
+
+    public function gatos(){
+        $mascotasModel = model('MascotasModel');
+
+        $razasModel = model('RazasModel');
+        $data['razas'] = $razasModel->findAll();
+
+        $dietasModel = model('DietasModel');
+        $data['dietas'] = $dietasModel->findAll();
+
+        $cuidadosModel = model('CuidadosModel');
+        $data['cuidados'] = $cuidadosModel->findAll();
+
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
+        
+        if(isset($_GET['idRaza'])){
+            $idRaza = $_GET['idRaza'];
+
+            $data['mascotas']=$mascotasModel->like('raza', $idRaza,$side='none')
+                            ->findAll();
+        }
+        else {
+            $idRaza="";
+            $data['mascotas']=$mascotasModel->like('raza','Gato',$side='none')->findAll();
+        }
+
+        return view('common/head').
+               view('common/menu').
+               view('mascotas/gatos',$data).
+               view('common/footer');
+    }
 }
 

@@ -77,6 +77,9 @@ $routes->post('dietas/update','DietasController::update');
 $routes->get('usuario/mascotas','UsuariosController::mascotas');
 $routes->get('usuario/perros','UsuariosController::perros');
 $routes->get('usuario/gatos','UsuariosController::gatos');
+
 $routes->get('/', 'UsuariosController::index');
 $routes->get('admin', 'MascotasController::mostrarAdoptadas');
 $routes->get('admin/graficas', 'MascotasController::graficas');
+$routes->get('admin/perros','MascotasController::perros');
+$routes->get('admin/gatos','MascotasController::gatos');

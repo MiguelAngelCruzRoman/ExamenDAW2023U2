@@ -11,8 +11,8 @@ class DietasModel extends Model
     protected $primaryKey       = 'idDietas';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $useSoftDeletes   = true;
+    protected $protectFields    = false;
     protected $allowedFields    = ['idDietas','hidratación','carnes','visceras','pescado','cereales','porcionesDiarias','porcionesDiarias'];
 
     // Dates

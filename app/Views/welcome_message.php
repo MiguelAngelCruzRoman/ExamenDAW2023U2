@@ -66,7 +66,6 @@
                         ?>
                         <p class="card-text">Personalidad: <?= $mascota->caracter ?></p>
                         <div class="text-center">
-                            <a href="<?= base_url('/mascotas/adoptar/' . $mascota->idMascota) ?>" class="btn btn-success">Adoptar</a>
                             <a href="<?= base_url('/mascotas/informacion/' . $mascota->idMascota) ?>" class="btn btn-secondary">Saber más</a>
                         </div>
                     </div>

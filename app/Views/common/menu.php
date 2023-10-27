@@ -41,11 +41,11 @@
           </ul>
         </li>
 
-        <a class="nav-link " href="<?= base_url('index.php/usuario/perros') ?>" role="button">
+        <a class="nav-link " href="<?= base_url('index.php/admin/perros') ?>" role="button">
             Perros 🐶
           </a>
 
-          <a class="nav-link" href="<?= base_url('index.php/usuario/gatos') ?>" role="button">
+          <a class="nav-link" href="<?= base_url('index.php/admin/gatos') ?>" role="button">
             Gatos 🐱
           </a>
 

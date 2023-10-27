@@ -18,7 +18,7 @@
                     <h4 class="card-text">Raza de
                         <?php foreach($razas as $raza): ?>
                             <?php if($raza->idRaza == $mascota->raza): ?> 
-                            <?php $raza->tipo.': ' $raza->nombre. ' ('.$raza->origen.')'?>
+                            <?php $raza->tipo.': '. $raza->nombre. ' ('.$raza->origen.')'?>
                             <?php endif; ?>
                         <?php endforeach; ?>
                     </h4>

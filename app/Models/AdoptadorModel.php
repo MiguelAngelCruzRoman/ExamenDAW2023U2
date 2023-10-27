@@ -11,8 +11,8 @@ class AdoptadorModel extends Model
     protected $primaryKey       = 'idAdoptador';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $useSoftDeletes   = true;
+    protected $protectFields    = false;
     protected $allowedFields    = ['idAdoptador','primerNombre','segundoNombre','apellidoPaterno','apellidoMaterno','fechaNacimiento','CIC','CURP','foto','status'];
 
     // Dates

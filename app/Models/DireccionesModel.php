@@ -11,8 +11,8 @@ class DireccionesModel extends Model
     protected $primaryKey       = 'idDireccion';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $useSoftDeletes   = true;
+    protected $protectFields    = false;
     protected $allowedFields    = ['idDireccion','estado','municipio','colonia','calle','CP','noExt','noInt','tipoVivienda'];
 
     // Dates

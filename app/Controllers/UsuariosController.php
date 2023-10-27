@@ -40,6 +40,12 @@ class UsuariosController extends BaseController
         $cuidadosModel = model('CuidadosModel');
         $data['cuidados'] = $cuidadosModel->findAll();
 
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
+
         if(isset($_GET['idRaza'])){
             $idRaza = $_GET['idRaza'];
 
@@ -69,6 +75,12 @@ class UsuariosController extends BaseController
         $cuidadosModel = model('CuidadosModel');
         $data['cuidados'] = $cuidadosModel->findAll();
 
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
+
         if(isset($_GET['idRaza'])){
             $idRaza = $_GET['idRaza'];
 
@@ -97,6 +109,12 @@ class UsuariosController extends BaseController
 
         $cuidadosModel = model('CuidadosModel');
         $data['cuidados'] = $cuidadosModel->findAll();
+
+        $mascotaAdoptadorModel = model('mascotaAdoptadorModel');
+        $data['adopciones'] = $mascotaAdoptadorModel->findAll();
+
+        $alumnoModel = model('AdoptadorModel');
+        $data['adoptadores']=$alumnoModel->findAll();
 
         if(isset($_GET['idRaza'])){
             $idRaza = $_GET['idRaza'];

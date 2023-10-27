@@ -11,8 +11,8 @@ class mascotaAdoptadorModel extends Model
     protected $primaryKey       = 'idMascotaAdoptador';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $useSoftDeletes   = true;
+    protected $protectFields    = false;
     protected $allowedFields    = ['idMascotaAdoptador','mascota','adoptador'];
 
     // Dates

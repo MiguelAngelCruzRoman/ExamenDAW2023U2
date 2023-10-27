@@ -11,8 +11,8 @@ class CuidadosModel extends Model
     protected $primaryKey       = 'idCuidados';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $useSoftDeletes   = true;
+    protected $protectFields    = false;
     protected $allowedFields    = ['idCuidados','tipo','cantidadCuidado','frecuenciaCuidado','recomendaciones'];
 
     // Dates
