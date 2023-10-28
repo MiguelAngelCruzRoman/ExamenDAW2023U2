@@ -339,7 +339,7 @@ class MascotasController extends BaseController
 
         return view('common/head').
                view('common/menu').
-               view('mascotas/perros',$data).
+               view('mascotas/perrosUsuario',$data).
                view('common/footer');
     }
 
@@ -374,7 +374,7 @@ class MascotasController extends BaseController
 
         return view('common/head').
                view('common/menu').
-               view('mascotas/gatos',$data).
+               view('mascotas/gatosUsuario',$data).
                view('common/footer');
     }
 }
